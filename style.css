@@ -1,0 +1,74 @@
+
+
+#buttons{
+    margin-top: -150px;
+    margin-left: 100px;
+    width: 50px;
+    gap: 10px;
+
+ 
+
+    display: flex; flex-direction: column;
+}
+
+#on{
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+}
+#off{
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#fan{
+    margin-top: 100px;
+    margin-left:    140px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url(FAAN.jpeg);
+    background-size: cover;
+
+ 
+}
+#fan_off{
+    background-color: greenyellow;
+    font-size: 20px; border-radius: 5px;
+    
+}
+#fan_on{
+    margin-left: 160px;  border-radius: 5px;
+    background-color: white;
+}
+
+.active{
+    animation: active 0.05s linear infinite;
+}
+
+@keyframes active{
+    0%{ 
+        
+        transform: rotate(0deg);
+    }
+  
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.deactive{
+    animation: deactive 1s linear alternate-reverse;
+}
+@keyframes deactive{
+    from{ 
+        
+        transform: rotate(560deg);
+    }
+  
+    to{
+        transform: rotate(0deg);
+    }
+}
+ 
